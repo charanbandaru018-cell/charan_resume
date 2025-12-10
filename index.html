@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charan Bandaru | Aspiring Web Developer</title>
+  <meta name="description" content="Portfolio of Charan Bandaru – Aspiring Web Developer"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --accent: #393f4d;
+      --text-light: #f8fafc;
+      --gray: #94a3b8;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: white;
+      background: #000;
+      overflow-x: hidden;
+    }
+
+    /* Hero with Professional Corporate Background */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.82)),
+                  url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80') center/cover no-repeat fixed;
+      background-size: cover;
+    }
+    .hero-content {
+      max-width: 900px;
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 4.8rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    .hero h2 {
+      font-size: 1.7rem;
+      font-weight: 500;
+      margin-bottom: 1.2rem;
+      opacity: 0.95;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 750px;
+      margin: 0 auto;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    /* Projects Section */
+    .projects-section {
+      padding: 6rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      background: #32363d;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2.6rem;
+      margin-bottom: 4rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+    .project-card {
+      background: #46494e;
+      border-radius: 14px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+    .project-card:hover { transform: translateY(-12px); }
+    .project-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .project-info { padding: 1.8rem; }
+    .project-info h3 { font-size: 1.45rem; margin-bottom: 0.6rem; }
+    .project-info p { color: var(--gray); font-size: 1rem; margin-bottom: 1.2rem; }
+    .btn {
+      padding: 0.75rem 1.5rem;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+    }
+
+    /* Footer */
+    footer {
+      background: #000;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1.3rem;
+      font-size: 1.1rem;
+    }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 3.2rem; }
+      .hero h2 { font-size: 1.4rem; }
+      .hero p { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero with Premium Corporate Background -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Charan Bandaru</h1>
+      <h2>Aspiring Web Developer</h2>
+      <p>Building fast, responsive, and modern web experiences with HTML, CSS, JavaScript.<br>
+      This portfolio showcases my projects and dedication to clean, professional development.</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects-section">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/600x400/1e293b/ffffff?text=Project+1" alt="Project 1">
+        <div class="project-info">
+          <h3>Project Title One</h3>
+          <p>Modern landing page built with React, Tailwind CSS, and smooth animations.</p>
+          <a href="#" class="btn" target="_blank">Live Demo</a>
+          <a href="#" style="color:var(--accent); margin-left:12px;">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="https://via.placeholder.com/600x400/1e293b/ffffff?text=Project+2" alt="Project 2">
+        <div class="project-info">
+          <h3>Project Title Two</h3>
+          <p>Full-stack application using Node.js, Express, MongoDB, and REST API.</p>
+          <a href="#" class="btn" target="_blank">Live Demo</a>
+          <a href="#" style="color:var(--accent); margin-left:12px;">GitHub →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Instagram -->
+  <footer>
+    <p style="font-size:1.8rem; margin-bottom:1rem;">Let’s work together</p>
+    <p>
+      <a href="mailto:your.email@example.com">your.email@example.com</a> • 
+      <a href="https://linkedin.com/in/charanbandaru" target="_blank">LinkedIn</a> • 
+      <a href="https://github.com/charanbandaru" target="_blank">GitHub</a> • 
+      <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
+    </p>
+    <p style="margin-top:2.5rem; font-size:0.95rem; color:#64748b;">
+      © 2025 Charan Bandaru. All rights reserved.
+    </p>
+  </footer>
+
+</body>
+</html>
